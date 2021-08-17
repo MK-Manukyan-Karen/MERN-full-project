@@ -1,0 +1,118 @@
+.wrapper {
+    width: 100%; 
+    min-height: 100vh;
+    margin-top: 80px;
+    background: url(../../Assets/Images/blackKarbon6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraphWrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.paragraph{
+    position: relative;
+    width: 100%;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 35px;
+}
+.text1 {
+    position: absolute;
+    color:#fff;;
+    top: 3px;
+
+}
+.text2 {
+    position: absolute;
+    color: rgb(228, 8, 0);
+    -webkit-text-stroke:1px rgb(228, 8, 0);
+    top: 1px;
+    left:3px;
+}
+.text3 {
+    position: absolute;
+    color: #03bcf4;
+    -webkit-text-stroke:1px #03bcf4;
+    top: -2px;
+    left:6px;
+ 
+}
+
+.textWrapper {
+    display: flex;
+    width: 100%;
+    word-spacing:1px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.text {
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    line-height: 30px;
+    margin-bottom: 20px;   
+    font-size: 20px; 
+    
+  }
+ 
+
+
+.info {
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-size: 20px; 
+    line-height: 30px;
+}
+
+.discount {
+    font-size: 20px;
+    color: yellowgreen;
+    font-weight: bold;
+    font-size: 22px; 
+}
+.link{
+    text-decoration: none;
+    color: #03bcf4;  
+}  
+
+@media screen and (max-width: 960px){
+
+    .paragraphWrapper {
+        margin-top: 60px;
+    }
+    .paragraph{
+        font-size: 1.4em;
+        letter-spacing: 5px;
+    }
+    .text { 
+        font-size: 16px; 
+      }
+
+    .info {
+        font-size: 16px; 
+    }
+    .discount {
+        font-size: 18px; 
+    }
+
+}
+
+  
+    

@@ -1,0 +1,47 @@
+
+
+.menuIcon {
+    display: none;
+}
+
+.bars {
+    display: flex;
+    justify-self:center;
+    align-self: center;
+    color: rgb(193, 236, 247);
+    font-size: 35px;
+}
+.close {
+    display: flex;
+    justify-self:center;
+    align-self: center;
+    color:  rgb(193, 236, 247);
+    font-size: 35px;
+}
+
+
+ @media screen and (max-width: 960px) {
+    .menuIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+ }
+
+ @media screen and (max-width: 430px) {
+    .menuIcon {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .bars {
+        font-size: 25px;
+    }
+    .close {
+        font-size: 25px;
+    }
+ }
+
+

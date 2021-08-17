@@ -1,0 +1,385 @@
+/* historyOrdersContainer */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../Assets/Images/blackKarbon6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-self: center;
+    z-index: 1;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    background: rgba(0, 0, 0, 0.678);
+    border-radius: 20px;
+    border: 2px solid #03e8f465;
+}
+
+.paragraphWrapper {
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.paragraphWrapper .logo {
+    max-width: 100px;
+    position: absolute;
+    left: -3%;
+    bottom: 37%;
+}
+.paragraph {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.close {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    align-items: center;
+    color: rgb(255, 0, 0);
+    font-size: 28px;
+    cursor: pointer;
+    order: 1;
+}
+
+.removeButtonWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.removeAllOrder {
+    justify-items: center;
+    border-color: orange;
+    background-color: red;
+    border-radius: 10px;
+    color:white;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 6px 12px 6px 12px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px orange;
+    cursor: pointer;
+}
+.infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    border-bottom: 3px solid #03e9f4;
+    padding-bottom: 10px;
+    width: 95%;
+    margin: 0 auto;
+ }
+ .numberInfo {
+    color: rgb(60, 255, 0);
+    font-size: 16px;
+}
+.dateInfo {
+    color: rgb(255, 216, 44);
+    font-size: 16px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.dateInfo span {
+    margin-left: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.timeInfo {
+    color: rgb(251, 255, 21);
+    font-size: 16px;
+}
+.moneyInfo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+.moneyInfo span {
+    margin-left: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 15px;
+
+} 
+.histortOrdersContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* historyOrders */
+
+.historyOrdersWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 92%;
+    background: rgba(128, 128, 96,0.1);
+    border-radius: 10px;
+    border: 2px solid #03e8f43d;
+    padding:1.3em 0em;
+    cursor:pointer;
+    z-index: 5;
+
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(60, 255, 0);
+    font-size: 14px;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 216, 44);
+    font-size: 14px;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(251, 255, 21);
+    font-size: 14px;
+}
+.money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+
+.remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 108, 108);
+    font-size: 20px;
+    padding: 3px;
+}
+
+.remove span {
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+/* history */
+
+.historyWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.orderNumberWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.historyBodyWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.orderNumber {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fieldNumber {
+    color: red;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.historyBodyInfoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyBodyInfoWrapper {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #03e9f4;
+}
+.historyBodyInfoWrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+.historyBodyInfoWrapper span:nth-child(2) {
+    color: rgb(255, 30, 30);
+}
+.historyBodyInfoWrapper span:nth-child(3) {
+    color: rgb(30, 90, 255);
+}
+.historyBodyInfoWrapper span:nth-child(4) {
+    color: rgb(255, 203, 30);
+}
+
+.historyBody {
+    display: flex;
+    width: 90%;
+    border: 1px solid #03e9f4;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.historyBody span{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px;
+}
+
+.historyBody img {
+    max-width: 35px;
+}
+.historyBody span:nth-child(3) {
+    color: rgb(30, 90, 255);
+}
+.historyBody span:nth-child(4) {
+    color: rgb(255, 203, 30);
+}
+
+.removeOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: red;
+}
+.closeModal {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        align-items: center;
+        color: rgb(255, 0, 0);
+        font-size: 25px;
+        cursor: pointer;
+        top: 10px;
+        right: 10px;
+    
+}
+
+/* enptyContainer */
+
+.enptyContainerWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .enptyContainer {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    height: 50vh;
+    align-self: center;
+    z-index: 1;
+    margin-bottom: 30px;
+    margin-top: 150px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.678);
+    border-radius: 20px;
+    border: 2px solid #03e8f465;
+}
+
+
+.paragraph {
+    color:rgb(255, 172, 19);
+    text-shadow: 2px 1px 1px  rgb(39, 39, 38);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    
+}
+
+.textInfo {
+    margin:auto auto;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 1px orange;
+}
+
+img.enptyContainerLogo {
+    max-width: 100px;
+    position: absolute;
+    top:-15%;
+    left:-3%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

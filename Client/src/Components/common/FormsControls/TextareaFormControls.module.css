@@ -1,0 +1,67 @@
+.formControls{
+   display: grid;
+}  
+
+.textarea{
+    width: 350px;
+    height: 70px;
+   }
+.textarea::placeholder { color: rgba(114, 114, 114, 0.651); }
+
+.errorMassageWrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+.errorMassage{
+    color: red;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid red; 
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    background-color: rgb(255, 220, 220);
+
+}
+
+.photoError{
+    position: absolute;
+    bottom: 32%;
+    left: 85%;
+    width: 55px;
+    height: 30px;
+    
+}
+
+.photoError{
+    position: absolute;
+    bottom: 32%;
+    left: 85%;
+    cursor: pointer;
+    width: 55px;
+    height: 30px;
+    
+}
+
+.textareaWrapper{
+    position: relative;
+   
+}
+
+.error{
+    border: 3px solid red;
+    width: 350px;
+    height: 70px;
+}
+.noError{
+       
+        width: 350px;
+        height: 70px;
+    
+}
+
+
+
+
+
+

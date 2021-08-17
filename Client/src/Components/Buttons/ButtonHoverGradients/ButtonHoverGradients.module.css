@@ -1,0 +1,18 @@
+.btn {
+    font-size: 20px;
+    font-family: monospace;
+    color: #fff;
+    background: linear-gradient(to left, #1e9600, #fff200, #ff0000);
+    padding: 10px 55px;
+    border: none;
+    border-radius: 10px;
+    background-size: 200%;
+    transition: 0.5s;
+    cursor:url(../../../Assets//Images/cursor.png),pointer;
+    letter-spacing: 3px;
+  }
+  
+  .btn:hover {
+    background-position: right;
+  }
+  

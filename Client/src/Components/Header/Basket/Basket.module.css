@@ -1,0 +1,53 @@
+.basketWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+.basket {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  .infoQuantity {
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: white;
+    background: red;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 590px){
+
+   .basket {
+     font-size: 25px;
+   }
+   .basketWrapper {
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+ 
+}
+@media screen and (max-width: 430px){
+
+  .basket {
+    font-size: 20px;
+  }
+  .basketWrapper {
+   margin-right: 10px;
+   margin-left: 7px;
+ }
+
+}
+.image {
+  width: 60px;
+}

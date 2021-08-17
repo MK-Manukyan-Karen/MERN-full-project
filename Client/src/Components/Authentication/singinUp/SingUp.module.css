@@ -1,0 +1,314 @@
+.singInContainer {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  background: url(../../../Assets/Images/blackKarbon6.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+.loginFormContainer {
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   
+}
+
+.loginFormContainer .square {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  animation: animate 8s linear infinite;
+  animation-delay: calc(-1.5s * var(--i));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animate {
+  0%,100% {
+     transform: translateY(-40px);
+  }
+  50%{
+    transform: translateY(40px);
+  }
+}
+
+
+.loginFormContainer .square:nth-child(1) {
+  bottom: 70%;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius:30%;
+
+}
+
+.loginFormContainer .square:nth-child(1) img {
+  max-width: 80px;
+
+}
+
+
+.loginFormContainer .square:nth-child(2) {
+  bottom: 30%;
+  left: -100px;
+  width: 130px;
+  height: 130px;
+  z-index: 2;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius:30%;
+
+}
+.loginFormContainer .square:nth-child(2) img {
+  max-width: 100px;
+}
+
+.loginFormContainer .square:nth-child(3) {
+  bottom: 20%;
+  right: -50px;
+  width: 80px;
+  height: 80px;
+
+  border-top-right-radius: 30%;
+  border-bottom-left-radius:30%;
+
+}
+.loginFormContainer .square:nth-child(3) img {
+  max-width: 60px;
+}
+
+.loginFormContainer .square:nth-child(4) {
+  bottom: -4%;
+  left:30%;
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius:30%;
+
+}
+.loginFormContainer .square:nth-child(4) img {
+  max-width: 35px;
+}
+.loginFormContainer .square:nth-child(5) {
+  bottom:80%;
+  left:30%;
+  width: 60px;
+  height: 60px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius:30%;
+  z-index: 2;
+
+}
+.loginFormContainer .square:nth-child(5) img {
+  max-width: 40px;
+}
+
+.loginForm {
+  width: 100%;
+  padding: 2em;
+  position: relative;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius:30%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  margin-bottom: 50px;
+  margin-top: 150px;
+  /* box-shadow: 0 0 25px #03e9f4; */
+}
+
+
+
+:focus {outline: none;
+}
+
+
+input::placeholder {
+   color: rgba(255, 249, 158, 0.493);
+   text-align: center;
+   }
+
+   
+  .buttonWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    background: #111;
+    margin-top: 30px;
+  }
+ .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor:url(../../../Assets//Images/cursor.png),pointer;
+    width: 97%;
+    height: 42px;
+    border-radius: 50px;
+    z-index: 9;
+  }
+  .buttonWrapper span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .buttonWrapper span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50px;
+  }
+  
+  .buttonWrapper{
+  
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+    animation: rotate 1.5s linear infinite;
+  }
+  
+  .buttonWrapper:hover span:nth-child(1){
+    filter: blur(5px)
+  }
+  .buttonWrapper:hover span:nth-child(2){
+    filter: blur(10px)
+  }
+  
+  @keyframes rotate {
+    0% {
+      filter: hue-rotate(0deg)
+    }
+    100% {
+      filter: hue-rotate(360deg)
+    }
+  }
+
+  .closeRegister {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .loginParagraph{
+    margin-bottom:50px;
+    width:100%;
+  }
+  .loginParagraph h3{
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow:  0px 0px 2px rgb(0, 0, 0);
+  }
+  
+    .inputWrapper {
+      margin-bottom: 1em;
+      position: relative;
+    }
+
+    .inputErrorWrapper {
+      border-radius: 15px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+      border: 3px solid rgba(253, 0, 0, 0.808);
+      border-top: 3px solid rgba(248, 82, 82, 0.6);
+      border-left: 3px solid rgba(248, 82, 82, 0.6);
+    }
+
+    .errorMassageWrapper{
+      position: absolute;
+      left: 108%;
+      bottom: 0%;
+      width: 250px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+  
+    
+    }
+  
+   .errorMassage{
+       color: white;
+       text-shadow: 1px 1px 1px red;
+       font-size: 14px;
+       padding: 1em 1.3em;
+     
+   }
+
+   .showModalContainer {
+     width: 90%;
+     height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+
+  .showModalInfo{
+    text-align: center;
+    color: white;
+  }
+
+  .showModalLink {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #03e9f4;
+    text-decoration: none;
+    background: rgba(17, 17, 17, 0.651);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .showModalLink:hover {
+    color:white;
+    background:#03e8f425;
+    transition: 0.5s;
+  }
+  
+  
+  
+  
+  
+  
+
+

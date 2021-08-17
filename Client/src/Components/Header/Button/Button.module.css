@@ -1,0 +1,23 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.linkLogin {
+  text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width:430px){
+  .buttonWrapper {
+    margin-right: 5px;
+  }
+}
+
+
+
+
+

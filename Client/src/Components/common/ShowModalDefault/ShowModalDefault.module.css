@@ -1,0 +1,74 @@
+.closeModal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.modalContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.8s;
+    z-index: 10000000;
+
+ 
+ 
+}
+.modalContainer.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 10000000;
+  
+}
+
+
+.modalContent {
+    padding: 20px;
+    background-color: black;
+    margin-top: 80px ;
+    background-size: cover;
+    border: 1px solid #03e8f49c;
+    border-radius: 10px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(50vh) translate(0px, -100%);
+    z-index: 10000000;
+    overflow-y:auto;
+}
+.modalContent::-webkit-scrollbar {
+   width: 8px;
+}
+.modalContent::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    background: #03e8f4;
+  }
+.modalContent::-webkit-scrollbar-track {
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    box-shadow:inset 0 0 10px #03e8f4d0;
+  }
+
+.modalContent.active {
+    opacity: 1;
+    transform:perspective(50vh) translate(0px, 0%) rotateX(0deg);
+
+}
+
+

@@ -1,0 +1,187 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background: url(../../Assets/Images/blackKarbon6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.contentBody {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    width: 70%;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+.paragraph h3 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #15f4ee;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-shadow: 0.5px 0.5px 0.5px rgb(253, 249, 249);
+}
+
+.textWrapper {
+  width: 70%;
+  text-align: justify;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  word-spacing:1px;
+}
+.text {
+    color: rgb(247, 245, 243);
+    text-shadow: 0.5px 0.5px 0.5px rgb(27, 27, 27);
+    line-height: 24px
+}
+
+.textLink{
+    color: rgb(247, 245, 243);
+    text-shadow: 0.5px 0.5px 0.5px rgb(27, 27, 27);
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+.discount {
+    font-size: 20px;
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.linkRegister{
+    text-decoration: none;
+    color: #15f4ee;
+    margin-top: 15px;
+} 
+
+.box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animate 30s linear infinite;
+
+    /* margin-top: 30px; */
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(600px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(600px) rotateY(-360deg);
+    }
+}
+
+.box span  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100px;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(220px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+}
+
+
+.logoText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+                   0 0 20px #03bcf4,
+                   0 0 40px #03bcf4,
+                   0 0 80px #03bcf4,
+                   0 0 160px #03bcf4;
+    letter-spacing: 10px;
+    font-size: 30px;
+    animation: animateText 30s linear infinite;
+}
+
+@keyframes animateText {
+    0% {
+        transform: perspective(600px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(600px) rotateY(360deg);
+    }
+}
+
+
+.photo1 {
+    --i : 1;
+}
+.photo2 {
+    --i : 2;
+}
+.photo3 {
+
+    --i : 3;
+}
+.photo4 {
+    --i : 4;
+}
+.photo5 {
+    --i : 5;
+}
+.photo6 {
+    --i : 6;
+}
+.photo7 {
+    --i : 7;
+}
+.photo8 {
+    --i : 8;
+}
+
+.linkWrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: #15f4ee;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    border: 3px solid #15f4ee;
+    background: inherit;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.link:hover {
+    box-shadow: 0 3px 20px 0 #15f4ee inset, 0 3px 20px 0 #15f4ee,
+    0 3px 20px 0 #15f4ee inset, 0 3px 20px 0 #15f4ee;
+}
+
+ 

@@ -1,0 +1,34 @@
+
+.container {
+    width: 100%; 
+    min-height: 100vh;
+    margin-top: 80px;
+    background: url(../../Assets/Images/background1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ 
+.container .paragraph {
+    margin-top: 70px;
+    color: #15f4ee;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-shadow: 0.5px 0.5px 0.5px rgb(253, 249, 249);
+}
+ .productsContainer {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  
+} 
+
+

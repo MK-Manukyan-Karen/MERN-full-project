@@ -1,0 +1,129 @@
+.formControls{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative; 
+
+ } 
+ .inputWrapper {
+    width:100%;
+  }
+ 
+ .ifInput {
+    padding: 1em 2em;
+    width:100%;
+    box-sizing: border-box;
+    color:white;
+    font-size: 0.9rem;
+    font-family: Open Sans, Arial, sans-serif;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+
+.ifInput:focus{
+    background: rgba(245, 226, 226, 0.3);
+    border: none; 
+    transition: background .5s ease;
+    border: none;
+    outline: none;
+ }
+
+
+
+ .errorMassageWrapper{
+    position: absolute;
+    left:105%;
+    width: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+  
+  }
+
+ .errorMassage{
+     color: white;
+     text-shadow: 1px 1px 1px red;
+     font-size: 14px;
+     padding: 1em 1.3em;
+   
+ }
+
+ 
+ .error{
+    padding: 1em 2em;
+    width:100%;
+    box-sizing: border-box;
+    color:white;
+    font-size: 0.9rem;
+    font-family: Open Sans, Arial, sans-serif;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border: 3px solid rgba(253, 0, 0, 0.808);
+    border-top: 3px solid rgba(248, 82, 82, 0.6);
+    border-left: 3px solid rgba(248, 82, 82, 0.6);
+   
+ }
+ .invalid {
+     position: absolute;
+     width: 30px;
+     height: 20px;
+     background: url(../../../Assets/Images/invalid.png);
+     background-size:100% ;
+     background-repeat: no-repeat;
+     top: 30%;
+     right: 0%;
+     z-index: 2;
+     margin-right: 2px;
+ }
+
+ .valid {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url(../../../Assets/Images/valid.png);
+    background-size:100% ;
+    background-repeat: no-repeat;
+    top: 32%;
+    right: 0%;
+    z-index: 2;
+    margin-right:6px;
+}
+.propsError{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background: url(../../../Assets/Images/invalid.png);
+    background-size:100% ;
+    background-repeat: no-repeat;
+    top: 30%;
+    right: 0%;
+    z-index: 2;
+    margin-right: 2px;
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
